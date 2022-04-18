@@ -1,10 +1,10 @@
-echo "\nCriando usuário convidadomodelo..."
+echo "\nCriando usuário convidado-skel..."
 useradd -m convidado-skel
 
-echo "\nDefinindo senha para convidadomodelo..."
+echo "\nDefinindo senha para convidado-skel..."
 passwd convidado-skel
 
-echo "\nCriando link para o convidadomodelo..."
+echo "\nCriando link para o convidado-skel..."
 rm /etc/guest-session/skel
 ln -s /home/convidado-skel /etc/guest-session/skel
 
